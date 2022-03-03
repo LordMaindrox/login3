@@ -1,0 +1,96 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(./imagenes/palmeras-desktop.jpeg);
+    width: 100vw;
+    height: 100vh;
+}
+:root {
+    --raisin-black: #252323;
+    --state-gray: #70798C;
+    --isabelline: #F5F1ED;
+    --bone: #DAD2BC;
+    --grullo: #A99985;
+    -white: #ffffff;
+    --black: #000000;
+    --sm:14px;
+    --md:16px;
+    --lg:24px;
+
+}
+.contenedor {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.contenido {
+    
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+    /*background-color: var(--state-gray);*/
+    border-radius: 8PX;
+    /*background-image: url(./imagenes/palmeras-movil.jpeg);*/
+    /*opacity: 75%;*/
+    background-color: rgba(203, 153, 126, 0.7);
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+ 
+}
+.logo {
+    width: 100px;
+    justify-self: center;
+    /*position: relative;*/
+    padding-left: 65px;
+    margin: 32px;
+    
+    display: none;
+}
+.titulo {
+    font-size: var(--lg);
+    font-weight: 700;
+    text-align: center;
+}
+.subtitulo {
+    font-size: var(--md);
+    font-weight: 300;
+    text-align: center;
+}
+.input {
+    margin-bottom: 32px;
+    width: 90%;
+    height: 24px;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    align-self: center;
+    
+}
+.boton-primario {
+    width: 90%;
+    align-self: center;
+    border-radius: 8px;
+    border: none;
+    height: 24px;
+    cursor: pointer;
+    background-color: var(--black);
+    color: white;
+}
+.alerta {
+    text-align: center;
+    font-size: var(--sm);
+    font-weight: 300;
+
+}
+.alerta a {
+    text-decoration: none;
+    color: var(--bone);
+    cursor: pointer;
+}
+
+@media (max-width: 680px) {
+    .logo {
+        display: block;
+    }
+}
